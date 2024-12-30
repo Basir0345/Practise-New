@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patrona Puppy</title>
+  <!-- bootstrap link -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- bootstrap link -->
+  <!-- style sheet link -->
+    <!-- <link rel="stylesheet" href="styles.css">      -->
+  <!-- style sheet link -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+          @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+       .custom-font {
+        font-family: "Poppins", sans-serif;
+        font-style: normal;
+       }
+
+       .playwrite-it-moderna-uniquifier {
+      font-family: "Playwrite IT Moderna", cursive;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+};
+
+       .lh-2 {
+            line-height: 1.55rem;
+        }
+
+        .navbar-brand {
+            display: flex;
+            align-items: center;
+        }
+        
+
+    body {
+            font-family: Arial, sans-serif;
+            background-color: #130b0b;
+            margin: 0;
+            padding: 0;
+            color: #fdf7f7;
+        }
+        header {
+            background-color: #0c0907;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+        .new {
+            max-width: 800px;
+            margin: 10px auto;
+            background: rgb(15, 10, 10);
+            padding: 1px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #f7efef;
+        }
+        .faq {
+            margin-bottom: 20px;
+        }
+        .faq button {
+            width: 100%;
+            background-color: #ff0000;
+            color: white;
+            border: none;
+            padding: 15px;
+            text-align: left;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 4px;
+            margin-bottom: 5px;
+        }
+        .faq button:hover {
+            background-color: #f7f0f0;
+            color:#0c0907
+        }
+        .faq-content {
+            display: none;
+            padding: 15px;
+            background-color: #130808;
+            border-radius: 4px;
+            margin-top: -5px; 
+            font-size: 0.9em;
+        }
+    img.w-100 {
+    display: block;
+    width: 100% !important;
+    height: 600px !important;
+  }
+  .navbar{
+          background-color:  black;
+          font-family: Verdana, Geneva, Tahoma, sans-serif
+        }
+</style>
+
+    
+    </style>
+</head>
+<body>
+    <!-- navbar started -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="Index.html">
+          <div><img src="img1.png" style="height: 70px; width: 70px; padding-left: 5px; margin-left: 50px;"></div>
+          <span style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: 700; color: white; padding-left: 20px;">Patrona Puppy</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll" style="margin-left: 10%;">
+          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+            <li class="nav-item">
+              <a class="nav-link active text-light" aria-current="page" href="home.html"
+                style="font-size: 1.10rem; font-weight: bold;">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-light" aria-current="page" href="Dogsbreeds.html"
+                style="font-size: 1.10rem; font-weight: bold;">Dog Breeds</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-light" aria-current="page" href="puppycare.html"
+                style="font-size: 1.10rem; font-weight: bold;">Puppy Care</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-light" aria-current="page" href="faq.html"
+                style="font-size: 1.20rem; font-weight: bold;">Faq
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-light" aria-current="page" href="contact.html"
+                style="font-size: 1.10rem; font-weight: bold;">Contact us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-light" aria-current="page" href="login.html"
+                style="font-size: 1.10rem; font-weight: bold;">Login</a>
+            </li>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  <!-- navbar ended -->
+   <!-- main picture started -->
+   <main>
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="all images/main06.jpg" class="d-block w-100" style="height: 100px;" alt="...">
+          </div>  
+        <div class="carousel-item">
+          <img src="all images/main01_hd.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="all images/main02.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="all images/main03.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </main><br><br>
+  
+  <!-- main picture ended -->
+  
+  <header>
+        <h1 style="color: red; text-decoration: underline; font-family: 'Times New Roman', Times, serif;">VACCINATION SCHEDULE</h1>
+    </header>
+    <main class="new">
+        <section class="faq">
+            <button onclick="toggleFAQ(this)">How Many Times A Dog Should Be Vaccinated?</button>
+            <div class="faq-content">
+                <p>Core vaccines are required for all dogs and puppies. A core combination vaccine should be given at 8, 10 and 12 weeks of age, and then repeated annually. Some veterinarians may switch to a three-year vaccination schedule after a dog reaches two years of age.</p>
+            </div>
+        </section>
+        <section class="faq">
+            <button onclick="toggleFAQ(this)">How Many Months Is A Dog Fully Vaccinated ?
+            </button>
+            <div class="faq-content">
+                <p>When To Start Puppy Vaccinations. In general, a puppy should start vaccines as soon as you get the puppy (this is usually between 6 and 8 weeks) and then every two weeks until approximately four months of age when it will receive the final round.</p>
+            </div>
+        </section>
+        <section class="faq">
+            <button onclick="toggleFAQ(this)">Are your puppies vaccinated?</button>
+            <div class="faq-content">
+                <p>Yes, all our puppies receive age-appropriate vaccinations and deworming treatments before they go to their new homes.</p>
+            </div>
+        </section>
+        <section class="faq">
+            <button onclick="toggleFAQ(this)">How Long Do Dog Vaccines Last??</button>
+            <div class="faq-content">
+                <p>To maintain the best protection against infectious diseases, revaccinations have proven very successful. As vaccines are improved over time, some do not need to be given as often, depending on individual circumstances. Most dogs with low-risk lifestyles can be vaccinated every three years with the core vaccines and as needed for any non-core vaccines (most non-core vaccines require annual boosters). Your veterinarian will discuss the need and frequency of booster vaccinations for your dog based on your dog's needs and lifestyle.</p>
+            </div>
+        </section>
+        <section class="faq">
+            <button onclick="toggleFAQ(this)">What Are The 45 Days Puppy Vaccines?</button>
+            <div class="faq-content">
+                <p>For Pet Dogs, the first vaccine that is generally given is the “Puppy DP” between 4 to 6 weeks of age. This protects the puppy from deadly life-threatening airborne viruses such as Parvo and Distemper. The Anti-Rabies Vaccine, which I recommend next, can be given as early as 45 days with a Booster Shot after 21 days. Around 8 weeks of age, a combined cluster of vaccines commonly known as 5-in-1, 7-in-1, 9-in-1 or 11-in-1 is given with a Booster Shot after 21 days again.</p>
+            </div>
+        </section>
+    </main>
+ 
+    <header>
+        <h1 style="color: red; text-decoration: underline; font-family: 'Times New Roman', Times, serif;">NUTRITION TIPS</h1>
+    </header>
+    <main class="new">
+        <section class="faq">
+            <button onclick="toggleFAQ(this)">What Is A Dog's Natural Diet ?</button>
+            <div class="faq-content">
+                <p>In the case of dogs there is quite a lot of variety in their natural diet. Dogs are carnivores and the primary component of their diet is prey. This could be small animals mice, voles, rabbits, birds, insects and so forth or it could be larger prey caught with the help of a pack. Either way, they eat everything the internal organs, the meat, the bones, the lot.</p>
+            </div>
+        </section>
+        <section class="faq">
+            <button onclick="toggleFAQ(this)">What Nutrients Can I Add To Homemade Dog Food ?
+            </button>
+            </button>
+            <div class="faq-content">
+                <p>Vitamins are required for growth and maintenance. Vitamin deficiencies can cause a variety of health problems; however, they can also be dangerous in large quantities. Vitamins dogs require include A (carrots, pumpkin), B vitamins (liver, green vegetables, whole grains), C (fruits and vegetables, organ meat), D (liver, fish, beef), E (leafy green vegetables, liver, bran, plant oils), K (fish, leafy green vegetables, fish), and choline (liver, fish, meats, egg yolks).</p>
+            </div>
+        </section>
+        <section class="faq">
+            <button onclick="toggleFAQ(this)">How Do I Add Vitamins And Minerals To My Dog's Food ?
+            </button>
+            <div class="faq-content">
+                <p>Adding a variety of these foods to your dog's diet is the best way to get those trace minerals into his system: Nutrient rich proteins Chicken, turkey and spinach are high in zinc. Halibut, sardines and beef are great sources of selenium. Broccoli and kale are rich in iron. Flax seeds, kale and spinach are great sources of copper. You can find manganese in rabbit, egg and pumpkin seeds. Greens like spirulina, chlorella, alfalfa and kelp also provide concentrated sources of a range of minerals.</p>
+            </div>
+        </section>
+        <section class="faq">
+            <button onclick="toggleFAQ(this)">Is Roti Safe For Dogs ?</button>
+            <div class="faq-content">
+                <p>Rotis are no good for your pet. The magnitude of damage gluten is capable of doing to your pet is far more the goodness of protein it contains. Besides, pets have shorter intestines and have trouble digesting plant-based foods. Your dog needs a species-appropriate, meat-based diet, which is supplemented further with some fruits and veggies which will only add to his nutritional needs. Good food is at the heart of good health. Try gluten-free diets at Dawgiebowl to kickstart his nutritious today.</p>
+            </div>
+        </section>
+        <section class="faq">
+            <button onclick="toggleFAQ(this)">How Much Should I Feed My Dog ?</button>
+            <div class="faq-content">
+                <p>Adult dogs should be fed depending on their weight and level of activity. Assuming your dog has a typical activity level, toy breeds should have about 1/4 cups to 1 cup, small breeds should have about 1 cup to 1, 2/5 cup, medium breeds should have about 2 cups to 2, 2/3 cups, and large breeds should have about 2, 4/5 cups to 3 cups. Senior dogs should be fed a little less than adult dogs. Because they have lower energy levels, lessening the amount of food should be taken into consideration to keep your dog at a healthy weight. Adult dogs and senior dogs should be fed two times daily.</p>
+            </div>
+        </section>
+    </main>
+ 
+    <header>
+        <h1 style="color: red; text-decoration: underline; font-family: 'Times New Roman', Times, serif;">ENVIORNMENT EFFECTION</h1>
+    </header>
+    <main class="new">
+        <section class="faq">
+            <button onclick="toggleFAQ(this)">How Does The Environment Affect A Dog's Behavior?
+            </button>
+            <div class="faq-content">
+                <p>The environment plays a significant role in shaping a dog's behavior. Positive environments with socialization, mental stimulation, and regular exercise tend to result in well-adjusted and well-behaved dogs. On the other hand, negative environments with isolation, lack of stimulation, or exposure to stressful situations can lead to behavioral issues like anxiety, aggression, or excessive barking.</p>
+            </div>
+        </section>
+        <section class="faq">
+            <button onclick="toggleFAQ(this)">What Are The Effects Of A Noisy Environment On Dogs?
+            </button>
+            <div class="faq-content">
+                <p>A noisy environment can be stressful for dogs. Constant loud noises, such as heavy traffic or construction, can lead to anxiety and make it difficult for dogs to relax or sleep. Prolonged exposure to noise can also contribute to hearing damage. Providing a safe and quiet space for your dog to retreat to can help mitigate the negative effects of noise.</div>
+        </section>
+        <section class="faq">
+            <button onclick="toggleFAQ(this)">How Can I Create An Enriching Environment For My Dog?</button>
+            <div class="faq-content">
+                <p>To create an enriching environment for your dog, provide daily exercise, interactive toys, mental stimulation through training and puzzle games, and opportunities for socialization with other dogs and people. Designate a comfortable and safe space indoors and outdoors where your dog can rest and play. Regular walks and exposure to different environments can also help keep your dog's mind engaged.</div>
+        </section>
+        <section class="faq">
+            <button onclick="toggleFAQ(this)">What Are The Environmental Factors Of Dogs?
+            </button>
+            <div class="faq-content">
+                <p>Temperature, humidity, elevation, and terrain all play interconnected roles in determining your dog's energy requirements. Keep these factors in mind when deciding how much to feed your dog both in-season and off-season. Even in flat, snowless conditions, a dog working at temperatures near 0 degrees is going to have double his normal energy requirements,” says Russ Kelley, science lead at Eukanuba's Pet Health & Nutrition Center. “When you have an upland dog that's running through snow, or a retriever that's jumping into cold water, that's when the energy needs really go up.</div>
+        </section>
+        <section class="faq">
+            <button onclick="toggleFAQ(this)">How Can The Environment Affect A Dog ?</button>
+            <div class="faq-content">
+                <p>Dogs are naturally inquisitive and a dog may put itself in danger if it is left to explore unsupervised. Your dog needs a safe, comfortable place to rest, situated in a dry, draught-free area. Living in a cold or damp place can lead to unnecessary suffering. If your dog lives outside, it will need protection from adverse weather or other threats. A dog is by nature unlikely to soil its living area and needs regular opportunities to use a toilet area, or it will become distressed. Some dogs may need access to a toilet area more often. All dogs must be able to avoid things that frighten them and need a place to hide where they feel safe.</div>
+        </section>
+    </main>
+ 
+    <!-- end Faq option -->
+
+   <!-- Footer -->
+   <footer class="text-center text-lg-start text-white" style="border-top: 1px solid red;">
+
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row pt-6">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold" style="margin-top: 5px;">About Patrona Puppy</h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: red; height: 2px" />
+            <p>
+              This is website of a veteran want to share about all dogs she has met and research on. This is also a
+              location for person love dogs and has desire to explore more about this creature.
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold" style="margin-top: 5px;">Quickly </h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: red; height: 2px" />
+            <p>
+              <i class="" aria-hidden="true" style="text-decoration: none;"></i>
+              <a href="Index.html" class="text-white" style="text-decoration: none;">Home</a>
+            </p>
+            <p>
+              <i class="" aria-hidden="true" style="text-decoration: none;"></i>
+              <a href="Dogsbreeds.html" class="text-white" style="text-decoration: none;">Dogs Breeds</a>
+            </p>
+            <p>
+              <i class="" aria-hidden="true"></i>
+              <a href="faq.n.html" class="text-white" style="text-decoration: none;">faq</a>
+            </p>
+            <p>
+              <i class="" aria-hidden="true" style="text-decoration: none;"></i>
+              <a href="Index.html" class="text-white" style="text-decoration: none;">Back to up</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold" style="margin-top: 5px;">Social Media</h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: red; height: 2px" />
+            <p>
+              <a href="#" class="fa fa-facebook" style="text-decoration: none;"></a>
+              <a href="https://www.facebook.com/olympics/" class="text-white"
+                style="text-decoration: none;">Facbook</a>
+
+            </p>
+            <p>
+              <a href="#" class="fa fa-youtube" style="text-decoration: none;"></a>
+              <a href="https://www.youtube.com/!" class="text-white" style="text-decoration: none;">Youtube</a>
+            </p>
+            <p>
+              <a href="#" class="fa fa-instagram" style="text-decoration: none;"></a>
+              <a href="#!" class="text-white" style="text-decoration: none;">Instagram</a>
+            </p>
+            <p>
+              <a href="#" class="fa fa-twitter" style="text-decoration: none;"></a>
+              <a href="#!" class="text-white" style="text-decoration: none;">Twitter</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold" style="margin-top: 5px;">Contact Us</h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: red; height: 2px" />
+            <p><i class="fas  mr-3"></i>Aptech Korangi Crossing Near Aman Tower Karachi.</p>
+            <p><i class="fas  mr-3"></i> www.Patrona Puppy.org</p>
+            <p><i class="fas  mr-3"></i> +92 31 90000000</p>
+            <p><i class="fas  mr-3"></i> +92 30 00000000</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: red">
+      © 2024 Copyright:
+      <a class="text-white" href="file:///D:/Vs%20Code%20Data/Complete%20Website/home.html">Patrona Puppy.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+  
+    <script>
+        function toggleFAQ(button) {
+            const content = button.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>

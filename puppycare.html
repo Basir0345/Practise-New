@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patrona Puppy</title>
+  <!-- bootstrap link -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- bootstrap link -->
+  <!-- style sheet link -->
+    <!-- <link rel="stylesheet" href="styles.css">      -->
+  <!-- style sheet link -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+       .custom-font {
+        font-family: "Poppins", sans-serif;
+        font-style: normal;
+       }
+
+       .playwrite-it-moderna-uniquifier {
+      font-family: "Playwrite IT Moderna", cursive;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+};
+
+       .lh-2 {
+            line-height: 1.55rem;
+        }
+
+        body {
+            background-color: black;
+            color: white;
+        }
+        .navbar-brand {
+      display: flex;
+      align-items: center;
+      color: white;
+      font-weight: 600;
+      
+    }
+
+    img.w-100 {
+    display: block;
+    width: 100% !important;
+    height: 600px !important;
+  }
+  .navbar{
+          background-color:  black;
+          font-family: Verdana, Geneva, Tahoma, sans-serif
+        }
+        .row{
+padding-left: 100px;
+background-color: black;
+        }
+
+        .thead-light{
+            background-color: black;
+        }
+        
+
+    
+    </style>
+</head>
+<body style="background-color: black; color: white;">
+    <!-- navbar started -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="Index.html">
+          <div><img src="img1.png" style="height: 70px; width: 70px; padding-left: 5px; margin-left: 50px;"></div>
+          <span style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: 700; color: white; padding-left: 20px;">Patrona Puppy</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll" style="margin-left: 10%;">
+          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+            <li class="nav-item">
+              <a class="nav-link active text-light" aria-current="page" href="home.html"
+                style="font-size: 1.10rem; font-weight: bold;">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-light" aria-current="page" href="Dogsbreeds.html"
+                style="font-size: 1.10rem; font-weight: bold;">Dog Breeds</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-light" aria-current="page" href="puppycare.html"
+                style="font-size: 1.10rem; font-weight: bold;">Puppy Care</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-light" aria-current="page" href="faq.n.html"
+                style="font-size: 1.20rem; font-weight: bold;">Faq
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-light" aria-current="page" href="contact.html"
+                style="font-size: 1.10rem; font-weight: bold;">Contact us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-light" aria-current="page" href="login.html"
+                style="font-size: 1.10rem; font-weight: bold;">Login</a>
+            </li>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  <!-- navbar ended -->
+   <!-- main picture started -->
+   <main>
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          
+          <img src="all images/main01_hd.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="all images/main02.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="all images/main03.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </main><br><br>
+  
+<!-- main picture ended -->
+<!-- heading started     -->
+ <!-- all div copy  -->
+ <div class="container">
+    
+    <div class="loc" style="text-align:center; padding-top: 3em;">
+        <h1 style="color: red; text-decoration: underline;">Dog Breeds</h1>
+    </div>
+    <!-- start dog breed content -->
+    <hr>
+    <div class="row" style="background-color: black;" >
+        <div class="filter col-12 col-lg-4 mb-3" style="background-color: black; color: white;" >
+            <!--- Filter content of website  -->
+            <form action="login.html" class="form-group" style="background-color: black; color: white;" id="frmFilter" method="GET">
+                <p class="secondary" style="background-color: black;"><b>Filter</b></p>
+                <div class="table-responsive" style="background-color: black;">
+                    <table class="table table-borderless table-hover table-sm " id="table_filter" style="background-color: black;">
+                        <thead class="thead-light" style="background-color: black;">
+                            <tr">
+                                <th style="background-color: black; color: white;"><label class=" control-label" for="">Size</label></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="background-color: black; color: white;"><input type="radio" name="sizeOp" value="Small"> Small</td>
+                            </tr>
+                            <tr>
+                                <td style="background-color: black; color: white;"><input type="radio" name="sizeOp" value="Medium"> Medium</td>
+                            </tr>
+                            <tr>
+                                <td style="background-color: black; color: white;"><input type="radio" name="sizeOp" value="Large"> Large</td>
+                            </tr>
+                        </tbody>
+                        <thead class="thead-light">
+                            <tr>
+                                <th style="background-color: black; color: white;"><label class="control-label" for="">Character</label></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="background-color: black; color: white;"><input type="radio" name="characterOp" value="Hypoallergenic"> Hypoallergenic
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="background-color: black; color: white;"><input type="radio" name="characterOp" value="Fluffy"> Fluffy</td>
+                            </tr>
+                            <tr>
+                                <td style="background-color: black; color: white;"><input type="radio" name="characterOp" value="Smartest"> Smartest</td>
+                            </tr>
+                            <tr>
+                                <td style="background-color: black; color: white;"><input type="radio" name="characterOp" value="Best guard"> Best guard</td>
+                            </tr>
+
+                        </tbody>
+                        <thead class="thead-light">
+                            <tr>
+                                <th style="background-color: black;"><label class="control-label" for="">Color</label></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="background-color: black; color: white;"><input type="radio" name="colorOp" value="White"> White</td>
+                            </tr>
+                            <tr>
+                                <td style="background-color: black; color: white;"><input type="radio" name="colorOp" value="Black"> Black</td>
+                            </tr>
+                            <tr>
+                                <td style="background-color: black; color: white;"><input type="radio" name="colorOp" value="Others"> Others</td>
+                            </tr>
+
+
+                        </tbody>
+                        <thead class="thead-light">
+                            <tr>
+                                <th style="background-color: black; color: white;"><label class="control-label" for="">Geography</label></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="background-color: black; color: white;"><input type="radio" name="GeographyOp" value="Asia"> Asia</td>
+                            </tr>
+                            <tr>
+                                <td style="background-color: black; color: white;"><input type="radio" name="GeographyOp" value="North America"> America</td>
+                            </tr>
+                            <tr>
+                                <td style="background-color: black; color: white;"><input type="radio" name="GeographyOp" value="Europe"> Europe</td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                    <a href="login.html"><button class="btn btn-danger btn-sm" type="submit">Submit</button></a>
+                    <button class="btn btn-danger btn-sm" type="reset" id="reset">Reset</button>
+                </div>
+            </form>
+        </div>
+        <!-- slider end  -->
+        <!-- card container start -->
+        <div class="card_container col-lg-8 col-12">
+            <!-- card1 start  -->
+            <!-- <div class="cardcontainer"> -->
+            <div class="row">
+                <div data-aos="zoom-in-up" data-aos-duration="1500" class="card col-md-4 " style=" height: 300px; width: 18rem; background-color: black; color: white;">
+                    <img src="all images/side01.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Golden Retriever</h5>
+
+                        </div>
+                </div>
+
+                <!-- card 1 -->
+                <!-- card 2 -->
+                <div data-aos="zoom-in-up" data-aos-duration="1500" class="card col-md-4 " style=" height: 300px; width: 18rem; background-color: black; color: white;">
+                    <img src="all images/side02.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">German Shepherd</h5>
+
+                    </div>
+                </div>
+                <!-- card 2  -->
+                <!-- card 3 -->
+                <div data-aos="zoom-in-up" data-aos-duration="1500" class="card col-md-4" style=" background-color: black; color: white; height: 300px; width: 18rem;; ">
+                    <img src="all images/side03.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Australian Shepherd</h5>
+
+                    </div>
+                </div>
+
+            <!-- </div> -->
+            <!-- card 3  -->
+            <!-- card 4 -->
+            <!-- <div class="threecard"> -->
+                <div data-aos="zoom-in-up" data-aos-duration="1500" class="card col-md-4" style=" height: 300px;width: 18rem; background-color: black; color: white;">
+                    <img src="all images/side04.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Pomeranian</h5>
+
+                    </div>
+                </div>
+                <!-- card 4 -->
+                <!-- card 5 -->
+                <div data-aos="zoom-in-up" data-aos-duration="1500" class="card col-md-4" style=" height: 300px;width: 18rem; background-color: black; color: white;">
+                    <img src="all images/side05.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Siberian Husky</h5>
+                           </div>
+                </div>
+                <!-- card 5  -->
+                <!-- card 6 -->
+                <div data-aos="zoom-in-up" data-aos-duration="1500" class="card col-md-4" style=" height: 300px;width: 18rem; background-color: black; color: white;">
+                    <img src="all images/side06.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Bulldog</h5>
+
+                    </div>
+                </div>
+            </div>
+                <!-- card 6  -->
+            <!-- </div> -->
+            <!-- card container end -->
+
+
+        </div>
+    </div>
+</div>
+<!-- all div
+    <div class="">
+
+   <!-- Footer -->
+   <footer class="text-center text-lg-start text-white" style="border-top: 1px solid red;">
+
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row pt-6">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold" style="margin-top: 5px;">About Patrona Puppy</h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: red; height: 2px" />
+            <p>
+              This is website of a veteran want to share about all dogs she has met and research on. This is also a
+              location for person love dogs and has desire to explore more about this creature.
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold" style="margin-top: 5px;">Quickly </h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: red; height: 2px" />
+            <p>
+              <i class="" aria-hidden="true" style="text-decoration: none;"></i>
+              <a href="Index.html" class="text-white" style="text-decoration: none;">Home</a>
+            </p>
+            <p>
+              <i class="" aria-hidden="true" style="text-decoration: none;"></i>
+              <a href="Dogsbreeds.html" class="text-white" style="text-decoration: none;">Dogs Breeds</a>
+            </p>
+            <p>
+              <i class="" aria-hidden="true"></i>
+              <a href="faq.n.html" class="text-white" style="text-decoration: none;">faq</a>
+            </p>
+            <p>
+              <i class="" aria-hidden="true" style="text-decoration: none;"></i>
+              <a href="Index.html" class="text-white" style="text-decoration: none;">Back to up</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold" style="margin-top: 5px;">Social Media</h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: red; height: 2px" />
+            <p>
+              <a href="#" class="fa fa-facebook" style="text-decoration: none;"></a>
+              <a href="https://www.facebook.com/olympics/" class="text-white"
+                style="text-decoration: none;">Facbook</a>
+
+            </p>
+            <p>
+              <a href="#" class="fa fa-youtube" style="text-decoration: none;"></a>
+              <a href="https://www.youtube.com/!" class="text-white" style="text-decoration: none;">Youtube</a>
+            </p>
+            <p>
+              <a href="#" class="fa fa-instagram" style="text-decoration: none;"></a>
+              <a href="#!" class="text-white" style="text-decoration: none;">Instagram</a>
+            </p>
+            <p>
+              <a href="#" class="fa fa-twitter" style="text-decoration: none;"></a>
+              <a href="#!" class="text-white" style="text-decoration: none;">Twitter</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold" style="margin-top: 5px;">Contact Us</h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: red; height: 2px" />
+            <p><i class="fas  mr-3"></i>Aptech Korangi Crossing Near Aman Tower Karachi.</p>
+            <p><i class="fas  mr-3"></i> www.Patrona Puppy.org</p>
+            <p><i class="fas  mr-3"></i> +92 31 90000000</p>
+            <p><i class="fas  mr-3"></i> +92 30 00000000</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: red">
+      © 2024 Copyright:
+      <a class="text-white" href="file:///D:/Vs%20Code%20Data/Complete%20Website/home.html">Patrona Puppy.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>    
+</body>
+</html>
